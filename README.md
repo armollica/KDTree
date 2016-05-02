@@ -26,8 +26,8 @@ Creates a new *k*-d tree `generator`.
 
 *#* **generator**(*data*)
 
-Partitions the points in the array `data` into a *k*-d tree of `node`s. 
-The returned tree will be the root `node` that contains all other `node`s as
+Partitions the points in the array `data` into a *k*-d tree of nodes. 
+The returned tree will be the root `node` that contains all other nodes as
 "ancestors."
 
 *#* generator.**accessor**([callback])
@@ -48,19 +48,19 @@ The *k*-d tree generator returns a tree of nodes. Each `node` has four propertie
 *#* node.**find**(*point*, [*k*])
 
 Finds the *k*-nearest neighbors of the specified point. Returns an
-array of `node`s. *k* defaults to 1.
+array of nodes. *k* defaults to 1.
 
 *#* node.**flatten**()
 
-Returns this `node` and all of its ancestors as a flat array of `node`s.
+Returns this node and all of its ancestors as a flat array of nodes.
 
 *#* node.**toArray**()
 
-Returns this `node` and its ancestors as a nested array.
+Returns this node and its ancestors as a nested array.
 
 *#* node.**lines**(*extent*)
 
-Returns an array of points denoting the lines that partition the `node`s. This
+Returns an array of points denoting the lines that partition the nodes. This
 currently only works when *k* is 2. The *extent* defines how far these lines
 go. It's specified as [[*x0*, *y0*],[*x1*,*y1*]] where *x0* and *y0* are the
 lower bounds and *x1* and *y1* are the upper bounds.
