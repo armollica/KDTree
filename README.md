@@ -28,7 +28,7 @@ Creates a new *k*-d tree `generator`.
 
 Partitions the points in the array `data` into a *k*-d tree of nodes. 
 The returned tree will be the root `node` that contains all other nodes as
-"ancestors."
+ancestors, or subnodes.
 
 *#* generator.**accessor**([callback])
 
