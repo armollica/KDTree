@@ -8,7 +8,7 @@ Javascript library for creating
 <table>
   <tr>
     <td>
-      *k*-Nearest Neighbors (*k*-NN) Search <br>
+      k-Nearest Neighbors (k-NN) Search <br>
       <a href="http://bl.ocks.org/armollica/1593f53c0c8346d067491f39255d0b84"><img src="img/k-nn.png" width="230"></a>
     </td>
     <td>
