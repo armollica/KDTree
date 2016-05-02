@@ -22,12 +22,12 @@ Javascript library for creating
 
 *#* **KDTree**()
 
-Creates a new *k*-d tree **generator**.
+Creates a new *k*-d tree `generator`.
 
 *#* **generator**(*data*)
 
-Partitions the points in the array `data` into a *k*-d tree of nodes. 
-The returned tree will be the root node that contains all other nodes as
+Partitions the points in the array `data` into a *k*-d tree of `node`s. 
+The returned tree will be the root `node` that contains all other `node`s as
 "ancestors."
 
 *#* generator.**accessor**([callback])
@@ -39,7 +39,7 @@ not specified, it return the current *point*-accessor function. Defaults to:
 
 *#* **node**
 
-The *k*-d tree generator returns a tree of nodes. Each node has four properties:
+The *k*-d tree generator returns a tree of nodes. Each `node` has four properties:
 - `location`: position of the node (array of length *k*)
 - `axis`: axis the node splits (integer < k)
 - `datum`: data object associated with this node from the original `data` array
@@ -48,19 +48,19 @@ The *k*-d tree generator returns a tree of nodes. Each node has four properties:
 *#* node.**find**(*point*, [*k*])
 
 Finds the *k*-nearest neighbors of the specified point. Returns an
-array of nodes. *k* defaults to 1.
+array of `node`s. *k* defaults to 1.
 
 *#* node.**flatten**()
 
-Returns this node and all of its ancestors as a flat array of nodes.
+Returns this `node` and all of its ancestors as a flat array of `node`s.
 
 *#* node.**toArray**()
 
-Returns the node and its ancestors as a nested array.
+Returns this `node` and its ancestors as a nested array.
 
 *#* node.**lines**(*extent*)
 
-Returns an array of points denoting the lines that partition the nodes. This
+Returns an array of points denoting the lines that partition the `node`s. This
 currently only works when *k* is 2. The *extent* defines how far these lines
 go. It's specified as [[*x0*, *y0*],[*x1*,*y1*]] where *x0* and *y0* are the
 lower bounds and *x1* and *y1* are the upper bounds.
