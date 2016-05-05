@@ -165,7 +165,7 @@ function KDTreeGenerator() {
     return treeify(points, 0);
   }
   
-  tree.accessor = function(_) {
+  tree.point = function(_) {
     if (!arguments.length) return accessor;
     accessor = _;
     return tree;

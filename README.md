@@ -30,7 +30,7 @@ Partitions the points in the array `data` into a *k*-d tree of nodes.
 The returned tree will be the root `node` that contains all other nodes as
 descendants, or subnodes.
 
-*#* generator.**accessor**([callback])
+*#* generator.**point**([callback])
 
 Sets the *point*-accessor function for the generator. The callback should 
 return a *k*-dimensional point as an array of length *k*. If `callback` is
