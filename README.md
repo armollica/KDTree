@@ -1,7 +1,6 @@
 # KDTree
 
-Javascript library for creating 
-[*k*-d trees](https://en.wikipedia.org/wiki/K-d_tree). 
+Create [*k*-d trees](https://en.wikipedia.org/wiki/K-d_tree) using JavaScript. 
 
 ### Examples
 
